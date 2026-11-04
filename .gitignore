@@ -1,0 +1,15 @@
+.venv/
+dist/
+target/
+__pycache__/
+**/__pycache__/
+*.egg-info/
+*.py[cod]
+*.so
+*.pyd
+*.dylib
+*.dll
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.internal_architecture_tests/

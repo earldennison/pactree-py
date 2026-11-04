@@ -1,0 +1,17 @@
+[package]
+name = "pactree-py"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+name = "pactree_engine"
+crate-type = ["cdylib"]
+path = "src/rust_lib.rs"
+
+[dependencies]
+pact = { package = "pactree", path = "../pactree" }
+pyo3 = { version = "0.27", features = ["extension-module"] }
+pythonize = "0.27"
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["preserve_order"] }
